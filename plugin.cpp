@@ -11,10 +11,10 @@ __attribute__((unused)) const char *PLUGIN_NAME() {
 __attribute__((unused)) const char *PLUGIN_VERSION() {
     return "0.0.1";
 }
-__attribute__((unused)) enum ResultType
+__attribute__((unused)) ResultCheck
 get_combo_result(char *user, char *pass, char *proxy, enum ProxyType proxy_type) {
     // Add your code here
-    return BAD;
+    return (ResultCheck) {BAD, "Add what you want to be saved on the file additionally!"};
 }
 
 }

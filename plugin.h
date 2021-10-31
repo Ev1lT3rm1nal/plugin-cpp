@@ -19,4 +19,9 @@ typedef enum ResultType {                                                       
     BAD,                                                                                              //
 } ResultType;                                                                                         //
                                                                                                       //
+typedef struct ResultCheck {                                                                          //
+    enum ResultType result_type;                                                                      //
+    const char *extra_info;                                                                           //
+} ResultCheck;                                                                                        //
+                                                                                                      //
 #endif //PLUGIN_LIBRARY_H ----------------------------------------------------------------------------*/
